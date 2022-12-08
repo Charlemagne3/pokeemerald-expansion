@@ -1735,6 +1735,12 @@
 	.2byte \quantity
 	.endm
 
+	@ Writes the species name of the Pokemon in 'slot' (zero-indexed) of the player's party to the specified buffer.
+	.macro bufferpartymonspeciesname stringVarId:req, slot:req
+	.byte 0xe3
+	stringvar \stringVarId
+	.2byte \slot
+	.endm
 
 @ Supplementary
 

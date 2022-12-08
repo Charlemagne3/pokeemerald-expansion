@@ -2324,3 +2324,13 @@ bool8 ScrCmd_warpwhitefade(struct ScriptContext *ctx)
     ResetInitialPlayerAvatarState();
     return TRUE;
 }
+
+bool8 ScrCmd_bufferpartymonspeciesname(struct ScriptContext *ctx)
+{
+    u8 stringVarIndex = ScriptReadByte(ctx);
+    u16 partyIndex = VarGet(ScriptReadHalfword(ctx));
+
+    u32 species = GetMonData(&gPlayerParty[partyIndex], MON_DATA_SPECIES, NULL);
+    StringCopy(sScriptStringVars[stringVarIndex], gSpeciesNames[species]);
+    return FALSE;
+}

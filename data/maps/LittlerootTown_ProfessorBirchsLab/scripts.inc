@@ -113,19 +113,26 @@ LittlerootTown_ProfessorBirchsLab_OnFrame:
 @ This is just where the game tells you its yours and lets you nickname it
 LittlerootTown_ProfessorBirchsLab_EventScript_GiveStarterEvent::
 	lockall
-	bufferleadmonspeciesname STR_VAR_1
+	bufferpartymonspeciesname STR_VAR_1, 0
+	bufferpartymonspeciesname STR_VAR_2, 1
+	bufferpartymonspeciesname STR_VAR_3, 2
 	message LittlerootTown_ProfessorBirchsLab_Text_LikeYouToHavePokemon
 	waitmessage
 	playfanfare MUS_OBTAIN_ITEM
 	waitfanfare
-	msgbox LittlerootTown_ProfessorBirchsLab_Text_WhyNotGiveNicknameToMon, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, LittlerootTown_ProfessorBirchsLab_EventScript_NicknameStarter
-	goto_if_eq VAR_RESULT, NO, LittlerootTown_ProfessorBirchsLab_EventScript_GoSeeRival
-	end
-
-LittlerootTown_ProfessorBirchsLab_EventScript_NicknameStarter::
 	setvar VAR_0x8004, 0
-	call Common_EventScript_NameReceivedPartyMon
+	bufferpartymonspeciesname STR_VAR_1, 0
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_WhyNotGiveNicknameToMon1, MSGBOX_YESNO
+	call_if_eq VAR_RESULT, YES, Common_EventScript_NameReceivedPartyMon
+	setvar VAR_0x8004, 1
+	bufferpartymonspeciesname STR_VAR_2, 1
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_WhyNotGiveNicknameToMon2, MSGBOX_YESNO
+	call_if_eq VAR_RESULT, YES, Common_EventScript_NameReceivedPartyMon
+	setvar VAR_0x8004, 2
+	bufferpartymonspeciesname STR_VAR_3, 2
+	msgbox LittlerootTown_ProfessorBirchsLab_Text_WhyNotGiveNicknameToMon3, MSGBOX_YESNO
+	call_if_eq VAR_RESULT, YES, Common_EventScript_NameReceivedPartyMon
+	setvar VAR_0x8004, 0
 	goto LittlerootTown_ProfessorBirchsLab_EventScript_GoSeeRival
 	end
 
@@ -699,13 +706,23 @@ LittlerootTown_ProfessorBirchsLab_Text_LikeYouToHavePokemon:
 	.string "I guess you have your father's blood\n"
 	.string "in your veins after all!\p"
 	.string "Oh, yes. As thanks for rescuing me,\n"
-	.string "I'd like you to have the POKéMON you\l"
-	.string "used earlier.\p"
-	.string "{PLAYER} received the {STR_VAR_1}!$"
+	.string "I'd like you to have the POKéMON from\l"
+	.string "my bag earlier.\p"
+	.string "{PLAYER} received the {STR_VAR_1},\n"
+	.string "the {STR_VAR_2}, and the {STR_VAR_3}!$"
 
-LittlerootTown_ProfessorBirchsLab_Text_WhyNotGiveNicknameToMon:
+LittlerootTown_ProfessorBirchsLab_Text_WhyNotGiveNicknameToMon1:
 	.string "PROF. BIRCH: While you're at it, why not\n"
-	.string "give a nickname to that {STR_VAR_1}?$"
+	.string "give them nicknames?\p"
+	.string "Would you like to nickname {STR_VAR_1}?$"
+
+LittlerootTown_ProfessorBirchsLab_Text_WhyNotGiveNicknameToMon2:
+	.string "PROF. BIRCH: And how about {STR_VAR_2}?\n"
+	.string "Would you like to nickname {STR_VAR_2}?$"
+
+LittlerootTown_ProfessorBirchsLab_Text_WhyNotGiveNicknameToMon3:
+	.string "PROF. BIRCH: And finally {STR_VAR_3}?\n"
+	.string "Would you like to nickname {STR_VAR_3}?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_MightBeGoodIdeaToGoSeeRival:
 	.string "PROF. BIRCH: If you work at POKéMON\n"
