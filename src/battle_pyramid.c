@@ -109,7 +109,7 @@ static const struct PyramidFloorTemplate sPyramidFloorTemplates[] =
         .numTrainers = 3,
         .itemPositions = OBJ_POSITIONS_UNIFORM,
         .trainerPositions = OBJ_POSITIONS_UNIFORM,
-        .runMultiplier = 128,
+        .runMultiplier = 8,
         .layoutOffsets = {0, 0, 1, 1, 2, 2, 3, 3},
     },
     {
@@ -117,7 +117,7 @@ static const struct PyramidFloorTemplate sPyramidFloorTemplates[] =
         .numTrainers = 3,
         .itemPositions = OBJ_POSITIONS_UNIFORM,
         .trainerPositions = OBJ_POSITIONS_UNIFORM,
-        .runMultiplier = 128,
+        .runMultiplier = 8,
         .layoutOffsets = {1, 1, 2, 2, 3, 3, 4, 4},
     },
     {
@@ -125,7 +125,7 @@ static const struct PyramidFloorTemplate sPyramidFloorTemplates[] =
         .numTrainers = 3,
         .itemPositions = OBJ_POSITIONS_UNIFORM,
         .trainerPositions = OBJ_POSITIONS_UNIFORM,
-        .runMultiplier = 120,
+        .runMultiplier = 7,
         .layoutOffsets = {2, 2, 3, 3, 4, 4, 5, 5},
     },
     {
@@ -133,7 +133,7 @@ static const struct PyramidFloorTemplate sPyramidFloorTemplates[] =
         .numTrainers = 4,
         .itemPositions = OBJ_POSITIONS_UNIFORM,
         .trainerPositions = OBJ_POSITIONS_UNIFORM,
-        .runMultiplier = 120,
+        .runMultiplier = 7,
         .layoutOffsets = {3, 3, 4, 4, 5, 5, 6, 6},
     },
     {
@@ -141,7 +141,7 @@ static const struct PyramidFloorTemplate sPyramidFloorTemplates[] =
         .numTrainers = 4,
         .itemPositions = OBJ_POSITIONS_UNIFORM,
         .trainerPositions = OBJ_POSITIONS_IN_AND_NEAR_ENTRANCE,
-        .runMultiplier = 112,
+        .runMultiplier = 6,
         .layoutOffsets = {4, 4, 5, 5, 6, 6, 7, 7},
     },
     {
@@ -149,7 +149,7 @@ static const struct PyramidFloorTemplate sPyramidFloorTemplates[] =
         .numTrainers = 5,
         .itemPositions = OBJ_POSITIONS_UNIFORM,
         .trainerPositions = OBJ_POSITIONS_IN_AND_NEAR_EXIT,
-        .runMultiplier = 112,
+        .runMultiplier = 6,
         .layoutOffsets = {5, 6, 7, 8, 9, 10, 11, 12},
     },
     {
@@ -157,7 +157,7 @@ static const struct PyramidFloorTemplate sPyramidFloorTemplates[] =
         .numTrainers = 5,
         .itemPositions = OBJ_POSITIONS_UNIFORM,
         .trainerPositions = OBJ_POSITIONS_UNIFORM,
-        .runMultiplier = 104,
+        .runMultiplier = 5,
         .layoutOffsets = {6, 7, 8, 9, 10, 11, 12, 13},
     },
     {
@@ -165,7 +165,7 @@ static const struct PyramidFloorTemplate sPyramidFloorTemplates[] =
         .numTrainers = 4,
         .itemPositions = OBJ_POSITIONS_UNIFORM,
         .trainerPositions = OBJ_POSITIONS_IN_AND_NEAR_ENTRANCE,
-        .runMultiplier = 104,
+        .runMultiplier = 5,
         .layoutOffsets = {7, 8, 9, 10, 11, 12, 13, 14},
     },
     {
@@ -173,7 +173,7 @@ static const struct PyramidFloorTemplate sPyramidFloorTemplates[] =
         .numTrainers = 5,
         .itemPositions = OBJ_POSITIONS_UNIFORM,
         .trainerPositions = OBJ_POSITIONS_IN_AND_NEAR_EXIT,
-        .runMultiplier = 96,
+        .runMultiplier = 4,
         .layoutOffsets = {8, 9, 10, 11, 12, 13, 14, 15},
     },
     {
@@ -181,7 +181,7 @@ static const struct PyramidFloorTemplate sPyramidFloorTemplates[] =
         .numTrainers = 6,
         .itemPositions = OBJ_POSITIONS_UNIFORM,
         .trainerPositions = OBJ_POSITIONS_NEAR_EXIT,
-        .runMultiplier = 96,
+        .runMultiplier = 4,
         .layoutOffsets = {8, 9, 10, 11, 12, 13, 14, 15},
     },
     {
@@ -189,7 +189,7 @@ static const struct PyramidFloorTemplate sPyramidFloorTemplates[] =
         .numTrainers = 3,
         .itemPositions = OBJ_POSITIONS_UNIFORM,
         .trainerPositions = OBJ_POSITIONS_UNIFORM,
-        .runMultiplier = 88,
+        .runMultiplier = 3,
         .layoutOffsets = {12, 13, 14, 12, 13, 14, 12, 13},
     },
     {
@@ -197,7 +197,7 @@ static const struct PyramidFloorTemplate sPyramidFloorTemplates[] =
         .numTrainers = 5,
         .itemPositions = OBJ_POSITIONS_UNIFORM,
         .trainerPositions = OBJ_POSITIONS_UNIFORM,
-        .runMultiplier = 88,
+        .runMultiplier = 3,
         .layoutOffsets = {11, 11, 11, 11, 11, 11, 11, 11},
     },
     {
@@ -205,7 +205,7 @@ static const struct PyramidFloorTemplate sPyramidFloorTemplates[] =
         .numTrainers = 7,
         .itemPositions = OBJ_POSITIONS_UNIFORM,
         .trainerPositions = OBJ_POSITIONS_UNIFORM,
-        .runMultiplier = 80,
+        .runMultiplier = 2,
         .layoutOffsets = {12, 12, 12, 12, 12, 12, 12, 12},
     },
     {
@@ -213,7 +213,7 @@ static const struct PyramidFloorTemplate sPyramidFloorTemplates[] =
         .numTrainers = 4,
         .itemPositions = OBJ_POSITIONS_UNIFORM,
         .trainerPositions = OBJ_POSITIONS_UNIFORM,
-        .runMultiplier = 80,
+        .runMultiplier = 2,
         .layoutOffsets = {13, 13, 13, 13, 13, 13, 13, 13},
     },
     {
@@ -221,7 +221,7 @@ static const struct PyramidFloorTemplate sPyramidFloorTemplates[] =
         .numTrainers = 6,
         .itemPositions = OBJ_POSITIONS_UNIFORM,
         .trainerPositions = OBJ_POSITIONS_UNIFORM,
-        .runMultiplier = 80,
+        .runMultiplier = 1,
         .layoutOffsets = {14, 14, 14, 14, 14, 14, 14, 14},
     },
     {
@@ -229,7 +229,7 @@ static const struct PyramidFloorTemplate sPyramidFloorTemplates[] =
         .numTrainers = 8,
         .itemPositions = OBJ_POSITIONS_UNIFORM,
         .trainerPositions = OBJ_POSITIONS_UNIFORM,
-        .runMultiplier = 80,
+        .runMultiplier = 1,
         .layoutOffsets = {15, 15, 15, 15, 15, 15, 15, 15},
     }
 };

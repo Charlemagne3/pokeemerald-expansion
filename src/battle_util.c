@@ -665,8 +665,8 @@ bool8 TryRunFromBattle(u8 battler)
         {
             gBattleStruct->runTries++;
             pyramidMultiplier = GetPyramidRunMultiplier();
-            speedVar = (gBattleMons[battler].speed * pyramidMultiplier) / (gBattleMons[BATTLE_OPPOSITE(battler)].speed) + (gBattleStruct->runTries * 30);
-            if (speedVar > (Random() & 0xFF))
+            speedVar = (gBattleMons[battler].speed * pyramidMultiplier) / (gBattleMons[BATTLE_OPPOSITE(battler)].speed) + (gBattleStruct->runTries);
+            if (speedVar > (Random() & 0xF))
             {
                 gLastUsedAbility = ABILITY_RUN_AWAY;
                 gProtectStructs[battler].fleeType = FLEE_ABILITY;
@@ -693,21 +693,22 @@ bool8 TryRunFromBattle(u8 battler)
         if (InBattlePyramid())
         {
             pyramidMultiplier = GetPyramidRunMultiplier();
-            speedVar = (gBattleMons[battler].speed * pyramidMultiplier) / (gBattleMons[runningFromBattler].speed) + (gBattleStruct->runTries * 30);
-            if (speedVar > (Random() & 0xFF))
+            speedVar = (gBattleMons[battler].speed * pyramidMultiplier) / (gBattleMons[runningFromBattler].speed) + (gBattleStruct->runTries);
+            if (speedVar > (Random() & 0xF))
                 effect++;
         }
-        else if (gBattleMons[battler].speed < gBattleMons[runningFromBattler].speed)
+        else // if (gBattleMons[battler].speed < gBattleMons[runningFromBattler].speed)
         {
-            speedVar = (gBattleMons[battler].speed * 128) / (gBattleMons[runningFromBattler].speed) + (gBattleStruct->runTries * 30);
-            if (speedVar > (Random() & 0xFF))
+            speedVar = (gBattleMons[battler].speed * 8) / (gBattleMons[runningFromBattler].speed) + (gBattleStruct->runTries);
+            if (speedVar > (Random() & 0xF)) // 0xF == 15 == 1111
                 effect++;
         }
+        /*
         else // same speed or faster
         {
             effect++;
         }
-
+        */
         gBattleStruct->runTries++;
     }
 
