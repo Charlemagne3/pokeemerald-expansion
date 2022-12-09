@@ -208,10 +208,28 @@ Route101_Movement_Unused2:
 
 Route101_EventScript_Youngster::
 	msgbox Route101_Text_TakeTiredPokemonToPokeCenter, MSGBOX_NPC
+	goto_if_unset FLAG_RECEIVED_ROUTE_101_POTION, Route101_EventScript_GivePotion
 	end
 
 Route101_EventScript_Boy::
 	msgbox Route101_Text_WildPokemonInTallGrass, MSGBOX_NPC
+	goto_if_unset FLAG_RECEIVED_ROUTE_101_ANTIDOTE, Route101_EventScript_GiveAntidote
+	end
+
+Route101_EventScript_GivePotion::
+	lockall
+	msgbox Route101_Text_GivePotion, MSGBOX_NPC
+	giveitem ITEM_POTION
+	setflag FLAG_RECEIVED_ROUTE_101_POTION
+	releaseall
+	end
+
+Route101_EventScript_GiveAntidote::
+	lockall
+	msgbox Route101_Text_GiveAntidote, MSGBOX_NPC
+	giveitem ITEM_ANTIDOTE
+	setflag FLAG_RECEIVED_ROUTE_101_ANTIDOTE
+	releaseall
 	end
 
 Route101_EventScript_RouteSign::
@@ -289,12 +307,24 @@ Route101_Text_TakeTiredPokemonToPokeCenter:
 	.string "a POKéMON CENTER.\p"
 	.string "There's a POKéMON CENTER in OLDALE\n"
 	.string "TOWN right close by.$"
+	.string "Here, you better take this in case\n"
+	.string "you don't make it.$"
 
 Route101_Text_WildPokemonInTallGrass:
-	.string "Wild POKéMON will jump out at you in\n"
-	.string "tall grass.\p"
-	.string "If you want to catch POKéMON, you have\n"
-	.string "to go into the tall grass and search.$"
+	.string "I'm patrolling for dangerous POKéMON\n"
+	.string "in the tall grass.\p"
+	.string "If you want to catch wild POKéMON,\n"
+	.string "you'll have to buy a POKé BALL in OLDALE.$"
+	.string "Take this in case you get in trouble\n"
+	.string "on the way!$"
+
+Route101_Text_GivePotion:
+	.string "Here, you better take this in case\n"
+	.string "you don't make it.$"
+
+Route101_Text_GiveAntidote:
+	.string "Take this in case you get in trouble\n"
+	.string "on the way!$"
 
 Route101_Text_RouteSign:
 	.string "ROUTE 101\n"

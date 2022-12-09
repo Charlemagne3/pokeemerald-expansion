@@ -96,8 +96,8 @@
 #define FLAG_RESCUED_BIRCH                       0x52
 #define FLAG_LEGENDARIES_IN_SOOTOPOLIS           0x53
 
-#define FLAG_UNUSED_0x054                    0x54  // Unused Flag
-#define FLAG_UNUSED_0x055                    0x55  // Unused Flag
+#define FLAG_RECEIVED_ROUTE_101_POTION           0x54
+#define FLAG_RECEIVED_ROUTE_101_ANTIDOTE         0x55
 
 #define FLAG_HIDE_CONTEST_POKE_BALL          0x56  // Always set after new game, object it hides is added directly
 #define FLAG_MET_RIVAL_MOM                   0x57
@@ -1034,17 +1034,17 @@
 #define FLAG_HIDE_ROUTE_120_KECLEON_5                               0x3DC
 #define FLAG_HIDE_ROUTE_119_KECLEON_1                               0x3DD
 #define FLAG_HIDE_ROUTE_119_KECLEON_2                               0x3DE
-#define FLAG_HIDE_ROUTE_101_BOY                                     0x3DF
-#define FLAG_HIDE_WEATHER_INSTITUTE_2F_AQUA_GRUNT_M                 0x3E0
-#define FLAG_HIDE_LILYCOVE_POKEMON_CENTER_CONTEST_LADY_MON          0x3E1
-#define FLAG_HIDE_MT_CHIMNEY_LAVA_COOKIE_LADY                       0x3E2
-#define FLAG_HIDE_PETALBURG_CITY_SCOTT                              0x3E3
-#define FLAG_HIDE_SOOTOPOLIS_CITY_RAYQUAZA                          0x3E4
-#define FLAG_HIDE_SOOTOPOLIS_CITY_KYOGRE                            0x3E5
-#define FLAG_HIDE_SOOTOPOLIS_CITY_GROUDON                           0x3E6
-#define FLAG_HIDE_RUSTBORO_CITY_POKEMON_SCHOOL_SCOTT                0x3E7
+#define FLAG_HIDE_WEATHER_INSTITUTE_2F_AQUA_GRUNT_M                 0x3EF
+#define FLAG_HIDE_LILYCOVE_POKEMON_CENTER_CONTEST_LADY_MON          0x3E0
+#define FLAG_HIDE_MT_CHIMNEY_LAVA_COOKIE_LADY                       0x3E1
+#define FLAG_HIDE_PETALBURG_CITY_SCOTT                              0x3E2
+#define FLAG_HIDE_SOOTOPOLIS_CITY_RAYQUAZA                          0x3E3
+#define FLAG_HIDE_SOOTOPOLIS_CITY_KYOGRE                            0x3E4
+#define FLAG_HIDE_SOOTOPOLIS_CITY_GROUDON                           0x3E5
+#define FLAG_HIDE_RUSTBORO_CITY_POKEMON_SCHOOL_SCOTT                0x3E6
 
 // Item Ball Flags
+#define FLAG_ITEM_ROUTE_101_POTION                                  0x3E7
 #define FLAG_ITEM_ROUTE_102_POTION                                  0x3E8
 #define FLAG_ITEM_ROUTE_116_X_SPECIAL                               0x3E9
 #define FLAG_ITEM_ROUTE_104_PP_UP                                   0x3EA

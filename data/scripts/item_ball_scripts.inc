@@ -1,3 +1,7 @@
+Route101_EventScript_ItemPotion::
+	finditem ITEM_POTION
+	end
+	
 Route102_EventScript_ItemPotion::
 	finditem ITEM_POTION
 	end

@@ -19,7 +19,7 @@ gText_Birch_MainSpeech::
 	.string "Sometimes, we train by battling the\n"
 	.string "POKéMON of other trainers, to\l"
 	.string "strengthen and prepare ourselves.\l"
-	.string "for the wildernerss.\p"
+	.string "for the wilderness.\p"
 	.string "We don't know everything about\n"
 	.string "POKéMON. There are many secrets\l"
 	.string "surrounding POKéMON.\p"
