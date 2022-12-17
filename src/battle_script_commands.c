@@ -1216,44 +1216,210 @@ static const u16 sNaturePowerMoves[BATTLE_TERRAIN_COUNT] =
 
 static const u16 sPickupItems[] =
 {
+    ITEM_POKE_BALL,
+    ITEM_PREMIER_BALL,
+    ITEM_CHERISH_BALL,
+    ITEM_PARK_BALL,
     ITEM_POTION,
     ITEM_ANTIDOTE,
-    ITEM_SUPER_POTION,
-    ITEM_GREAT_BALL,
+    ITEM_PARALYZE_HEAL,
+    ITEM_BURN_HEAL,
+    ITEM_ICE_HEAL,
+    ITEM_AWAKENING,
+    ITEM_LURE,
     ITEM_REPEL,
-    ITEM_ESCAPE_ROPE,
+    ITEM_HEAL_BALL,
+    ITEM_FRIEND_BALL,
+    ITEM_LUXURY_BALL,
+    ITEM_SUPER_POTION,
     ITEM_X_ATTACK,
+    ITEM_X_DEFENSE,
+    ITEM_X_SP_ATK,
+    ITEM_X_SP_DEF,
+    ITEM_X_SPEED,
+    ITEM_X_ACCURACY,
+    ITEM_DIRE_HIT,
+    ITEM_GUARD_SPEC,
+    ITEM_SUPER_LURE,
+    ITEM_SUPER_REPEL,
+    ITEM_GREAT_BALL,
+    ITEM_SAFARI_BALL,
+    ITEM_SPORT_BALL,
+    ITEM_BERRY_JUICE,
     ITEM_FULL_HEAL,
+    ITEM_MAX_LURE,
+    ITEM_MAX_REPEL,
     ITEM_ULTRA_BALL,
     ITEM_HYPER_POTION,
     ITEM_RARE_CANDY,
-    ITEM_PROTEIN,
-    ITEM_REVIVE,
     ITEM_HP_UP,
-    ITEM_FULL_RESTORE,
-    ITEM_MAX_REVIVE,
+    ITEM_PROTEIN,
+    ITEM_IRON,
+    ITEM_CALCIUM,
+    ITEM_ZINC,
+    ITEM_CARBOS,
     ITEM_PP_UP,
+    ITEM_PP_MAX,
+    ITEM_POKE_DOLL,
+    ITEM_FLUFFY_TAIL,
+    ITEM_MAX_MUSHROOMS,
+    ITEM_NEST_BALL,
+    ITEM_HEAVY_BALL,
+    ITEM_DUSK_BALL,
+    ITEM_NET_BALL,
+    ITEM_DIVE_BALL,
+    ITEM_REPEAT_BALL,
+    ITEM_TIMER_BALL,
+    ITEM_FAST_BALL,
+    ITEM_LURE_BALL,
+    ITEM_MOON_BALL,
+    ITEM_DREAM_BALL,
+    ITEM_REVIVE,
+    ITEM_WHITE_HERB,
+    ITEM_ESCAPE_ROPE,
+    ITEM_QUICK_BALL,
+    ITEM_LEVEL_BALL,
+    ITEM_LOVE_BALL,
+    ITEM_MAX_POTION,
+    ITEM_FULL_RESTORE,
+    ITEM_EXP_CANDY_XS,
+    ITEM_EXP_CANDY_S,
+    ITEM_TINY_MUSHROOM,
+    ITEM_PEARL,
+    ITEM_PRETTY_FEATHER,
+    ITEM_ODD_KEYSTONE,
+    ITEM_STARDUST,
+    ITEM_BOTTLE_CAP,
+    ITEM_BIG_MUSHROOM,
+    ITEM_RARE_BONE,
+    ITEM_BIG_PEARL,
+    ITEM_GOLD_BOTTLE_CAP,
+    ITEM_NUGGET,
+    ITEM_STAR_PIECE,
+    ITEM_BALM_MUSHROOM,
+    ITEM_PEARL_STRING,
+    ITEM_COMET_SHARD,
+    ITEM_BIG_NUGGET,
+    ITEM_MAX_REVIVE,
+    ITEM_ETHER,
+    ITEM_MAX_ETHER,
+    ITEM_ELIXIR,
     ITEM_MAX_ELIXIR,
+    ITEM_AMULET_COIN,
+    ITEM_LEFTOVERS,
+    ITEM_SHELL_BELL,
+    ITEM_EXPERT_BELT,
+    ITEM_FOCUS_BAND,
+    ITEM_FOCUS_SASH,
+    ITEM_KINGS_ROCK,
+    ITEM_SHED_SHELL,
+    ITEM_CHOICE_BAND,
+    ITEM_CHOICE_SPECS,
+    ITEM_CHOICE_SCARF,
 };
 
 static const u16 sRarePickupItems[] =
 {
-    ITEM_HYPER_POTION,
-    ITEM_NUGGET,
-    ITEM_KINGS_ROCK,
-    ITEM_FULL_RESTORE,
-    ITEM_ETHER,
-    ITEM_WHITE_HERB,
-    ITEM_TM44_REST,
-    ITEM_ELIXIR,
-    ITEM_TM01_FOCUS_PUNCH,
-    ITEM_LEFTOVERS,
-    ITEM_TM26_EARTHQUAKE,
-};
-
-static const u8 sPickupProbabilities[] =
-{
-    30, 40, 50, 60, 70, 80, 90, 94, 98
+    ITEM_TM01,
+    ITEM_TM02,
+    ITEM_TM03,
+    ITEM_TM04,
+    ITEM_TM05,
+    ITEM_TM06,
+    ITEM_TM07,
+    ITEM_TM08,
+    ITEM_TM09,
+    ITEM_TM10,
+    ITEM_TM11,
+    ITEM_TM12,
+    ITEM_TM13,
+    ITEM_TM14,
+    ITEM_TM15,
+    ITEM_TM16,
+    ITEM_TM17,
+    ITEM_TM18,
+    ITEM_TM19,
+    ITEM_TM20,
+    ITEM_TM21,
+    ITEM_TM22,
+    ITEM_TM23,
+    ITEM_TM24,
+    ITEM_TM25,
+    ITEM_TM26,
+    ITEM_TM27,
+    ITEM_TM28,
+    ITEM_TM29,
+    ITEM_TM30,
+    ITEM_TM31,
+    ITEM_TM32,
+    ITEM_TM33,
+    ITEM_TM34,
+    ITEM_TM35,
+    ITEM_TM36,
+    ITEM_TM37,
+    ITEM_TM38,
+    ITEM_TM39,
+    ITEM_TM40,
+    ITEM_TM41,
+    ITEM_TM42,
+    ITEM_TM43,
+    ITEM_TM44,
+    ITEM_TM45,
+    ITEM_TM46,
+    ITEM_TM47,
+    ITEM_TM48,
+    ITEM_TM49,
+    ITEM_TM50,
+    ITEM_TM51,
+    ITEM_TM52,
+    ITEM_TM53,
+    ITEM_TM54,
+    ITEM_TM55,
+    ITEM_TM56,
+    ITEM_TM57,
+    ITEM_TM58,
+    ITEM_TM59,
+    ITEM_TM60,
+    ITEM_TM61,
+    ITEM_TM62,
+    ITEM_TM63,
+    ITEM_TM64,
+    ITEM_TM65,
+    ITEM_TM66,
+    ITEM_TM67,
+    ITEM_TM68,
+    ITEM_TM69,
+    ITEM_TM70,
+    ITEM_TM71,
+    ITEM_TM72,
+    ITEM_TM73,
+    ITEM_TM74,
+    ITEM_TM75,
+    ITEM_TM76,
+    ITEM_TM77,
+    ITEM_TM78,
+    ITEM_TM79,
+    ITEM_TM80,
+    ITEM_TM81,
+    ITEM_TM82,
+    ITEM_TM83,
+    ITEM_TM84,
+    ITEM_TM85,
+    ITEM_TM86,
+    ITEM_TM87,
+    ITEM_TM88,
+    ITEM_TM89,
+    ITEM_TM90,
+    ITEM_TM91,
+    ITEM_TM92,
+    ITEM_TM93,
+    ITEM_TM94,
+    ITEM_TM95,
+    ITEM_TM96,
+    ITEM_TM97,
+    ITEM_TM98,
+    ITEM_TM99,
+    ITEM_TM100
 };
 
 static const u8 sTerrainToType[BATTLE_TERRAIN_COUNT] =
@@ -13707,6 +13873,7 @@ static void Cmd_pickup(void)
     s32 i;
     u16 species, heldItem;
     u16 ability;
+    u8 lvl;
     u8 lvlDivBy10;
 
     if (InBattlePike())
@@ -13752,7 +13919,8 @@ static void Cmd_pickup(void)
         {
             species = GetMonData(&gPlayerParty[i], MON_DATA_SPECIES2);
             heldItem = GetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM);
-            lvlDivBy10 = (GetMonData(&gPlayerParty[i], MON_DATA_LEVEL)-1) / 10; //Moving this here makes it easier to add in abilities like Honey Gather
+            lvl = GetMonData(&gPlayerParty[i], MON_DATA_LEVEL);
+            lvlDivBy10 = (lvl-1) / 10; //Moving this here makes it easier to add in abilities like Honey Gather
             if (lvlDivBy10 > 9)
                 lvlDivBy10 = 9;
 
@@ -13766,19 +13934,16 @@ static void Cmd_pickup(void)
             {
                 s32 j;
                 s32 rand = Random() % 100;
-
-                for (j = 0; j < (int)ARRAY_COUNT(sPickupProbabilities); j++)
+                if (rand == 99)
                 {
-                    if (sPickupProbabilities[j] > rand)
-                    {
-                        SetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM, &sPickupItems[lvlDivBy10 + j]);
-                        break;
-                    }
-                    else if (rand == 99 || rand == 98)
-                    {
-                        SetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM, &sRarePickupItems[lvlDivBy10 + (99 - rand)]);
-                        break;
-                    }
+                    SetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM, &sRarePickupItems[rand]);
+                    break;
+                }
+                else
+                {
+                    rand = Random() % lvl;
+                    SetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM, &sPickupItems[rand]);
+                    break;
                 }
             }
             #if (defined ITEM_HONEY)
